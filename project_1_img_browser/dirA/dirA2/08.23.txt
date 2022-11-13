@@ -1,0 +1,4 @@
+try download OpenCV: version about 4.5
+
+
+learn about openCV with C++

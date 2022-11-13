@@ -1,0 +1,59 @@
+image:
+A discrete 2D array
+	width # of cols
+	height # of rows
+	Aspect ratio is width/height
+
+Pixel coordinates may be represented using Vector notation
+By convention, each vector is vertically oriented while its transpose is horizontally oriented
+
+image storage into memory:
+	colomu major order
+	row major order
+
+access image data
+	Scanline: left to right
+	raster scan order
+	image accessed as 1D array of pixel, with indices in the range i =0,1...,n where n is width*height
+	relationship between 1D and 2D arrays
+		i = y * width + x
+		x = i % width
+		y = i / width
+
+image types:
+grayscale image
+	number of bits used to store each gray level known as bit depth
+		b bits imply 2^b gray level
+		8 bits implt 256 gray level
+		hexdecimal notation
+RGB color image
+	each pixel is a vector of 3 integers, reprensenting 3 color channels
+	24 bits per pixel (bpp)
+	pixel stored as (RGB & BGR)
+	values of different colors stored as interleaved channels as B0G0R0B1G1R1.....BnGnRn
+	other method for storage is planar layout with each color channel stored separately
+		B0B1B2...G0G1G2...R1R2R..Rn
+
+Alpha value or opacity
+	00 indecates transparent while FF indicates opaque
+
+Binary image
+	each pixel is either black or white
+	1 bpp, but displayed with 8 bpp
+	useful for building masks to separate areas of image
+
+Real-valued image, or floating point image
+	32-bit floating point number; 64 bit double precision values, 16-bit half-precision values
+
+Complex-valued images
+	Output from computing the fourier transform of an image
+
+Brightness if each pixel proportional to its value
+
+Raw pixel as a height map or 3D surface plot
+I(x,y) as the value of the function as position(x,y)
+Grayscale image as a matrix of pixel value
+color image as a matrix of 3-tuples
+binary image as the set of pixel with value 1
+
+
