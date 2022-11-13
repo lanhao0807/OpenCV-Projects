@@ -1,0 +1,5 @@
+This project is making a corpus of images for future study if necessary.
+
+The progrma takes a directory of images (with sub directories)(file type detection) 
+
+Grayscaling or resizing (by options) all image and put them into a new directory
