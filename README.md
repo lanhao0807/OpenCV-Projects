@@ -1,7 +1,7 @@
 # OpenCV-Projects
-Study of OpenCV project for course computer visions CS5420
+Study of OpenCV, projects for image manipulation, restoration, and segmentation.
 
-For studying purpose, most functions are applied manually while there are OpenCV library
+For studying purpose, try to applied functionality manually while there are OpenCV library
 fucntions that are able to acomplish the tasks within a simple click
 
 Outputs are provided in each project directory
